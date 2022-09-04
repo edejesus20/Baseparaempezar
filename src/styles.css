@@ -1,0 +1,85 @@
+
+
+.titleCard2{
+  margin:0;
+  display:flex;
+  justify-content:center;
+  align-content: center;
+  }
+  
+html, body { height: 100%;overflow-x: hidden; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x:auto;
+  }
+}
+body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    background: #ccc;
+    /* border-radius: 4px; */
+    /* display: none;  Ocultar scroll */
+    /* overflow:auto; */
+  }
+  body::-webkit-scrollbar-thumb {
+    background:#5780f1;
+    border-radius: 4px;
+  }
+
+  .p-dialog-content::-webkit-scrollbar{
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    background: #ccc;
+}
+.p-dialog-content::-webkit-scrollbar-thumb  {
+  background:#5780f1;
+    border-radius: 4px;
+}
+.p-datatable-wrapper::-webkit-scrollbar{
+  width: 8px;     /* Tamaño del scroll en vertical */
+  height: 8px;    /* Tamaño del scroll en horizontal */
+  background: #ccc;
+}
+.p-datatable-wrapper::-webkit-scrollbar-thumb{
+  background:#5780f1;
+    border-radius: 4px;
+}
+
+  .p-sidebar-content::-webkit-scrollbar{
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+    background: #ccc;
+  }
+
+  .p-sidebar-content::-webkit-scrollbar-thumb {
+    background:#5780f1;
+    border-radius: 4px;
+  }
+
+  .logo {
+    display:flex;
+
+    padding: 10px 10px 0 10px;
+    background-color:transparent;
+    text-decoration: none;
+    font-size: 16px;
+      font-weight: 500;
+    z-index: 1;
+    width: 200px;
+  }
+  .logo img {
+    margin-top: -27px;
+      width: 75%;
+      height: 75%;
+      object-fit: cover;
+      overflow: hidden;
+      
+    }
+
+    .p-sidebar-header {
+      display: none;
+   }
+
+ 

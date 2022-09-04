@@ -1,0 +1,51 @@
+body{ 
+  display: flex;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+}
+
+  .sect {
+    width: 100%;
+    min-height: 500px;
+  }
+  #sect1,
+  #sect3 {
+    /* background-color: #3333337d; */
+    color: #fff;
+  }
+  #sect2 {
+    background-color: #dddddd7d;
+    color: #333;
+  }
+  #sect1 {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    position: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  mat-error > span:not(:first-child) {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    align-content: center;
+  }
+  .bordep{
+    border-left: 1px solid black;border-top: 1px solid black;border-right: 1px solid black;padding: 10px;
+  }
+  /* :host{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  } */
+  
+  .mat-form-field{
+    width: 100%;
+    min-width: 400px;
+  }
+  
+ 

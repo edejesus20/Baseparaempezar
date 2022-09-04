@@ -1,0 +1,57 @@
+
+  <div *ngFor="let item of menu; let i = index" 
+  class=" padre grid align-items-center justify-content-cente pl-2">
+    <span [routerLink]="item.link"  (click)="clickHandler($event, item)"
+    class=" text-600 cursor-pointer border-2 border-transparent border-rounded" 
+    style="padding-left: 10px;padding-bottom: 10px;padding-top: 10px;">
+      <i [ngClass]="item.icono"   style="font-size: 1.5rem; margin-top: 5px;"></i>
+      <span class="ml-4 font-bold" style=" width: 500px; font-size: 18px;">{{ item.titulo }}</span>
+      <ng-container *ngIf="item.menu != null" >
+      
+          <span *ngIf="item.collapsed " style="margin-left: 20px; 
+          position: relative; top: 0px; left: 0px; right: 10px; bottom: 0px;">
+            <i class="ml-4 pi pi-angle-up"></i>
+  
+          </span>
+          <span *ngIf="!item.collapsed" style="margin-left: 20px; margin-right: 20px;
+          position: relative; top: 0px; left: 0px; right: 10px; bottom: 0px;">
+            <i class="mr-0  pi pi-angle-down"></i>
+  
+          </span>
+       
+
+      </ng-container>
+    </span>
+    <div *ngIf="item.menu && !item.collapsed">
+      <div *ngFor="let subitem of item.menu" class="hijo">
+        <span   [routerLink]="subitem.link" (click)="clickHandler($event, subitem)" 
+        style="padding-left: 10px;">
+          <i class="ml-2 pi pi-chevron-right"  style="font-size: 1.5rem; margin-top: 5px;"></i>
+          <span class="ml-2 " style="font-size: 18px;">{{ subitem.titulo }}</span>
+
+          <ng-container *ngIf="subitem.menu">
+            <span *ngIf="subitem.collapsed ">
+              <i class="ml-2  pi pi-angle-up"></i>
+    
+            </span>
+            <span *ngIf="!subitem.collapsed">
+              <i class="ml-2  pi pi-angle-down"></i>
+    
+            </span>
+          </ng-container>
+        </span>
+        <div *ngIf="subitem.menu && !subitem.collapsed">
+          <div *ngFor="let item3 of subitem.menu" class="nieto">
+            <span class="mat-list-item" [routerLink]="item3.link" (click)="clickHandler($event, item3)"  
+            style="margin-top: 5px;padding-left: 10px;">
+          <i class="ml-4 pi pi-angle-right"  style="font-size: 1.5rem; margin-top: 5px;"></i>
+              
+              <span class="ml-4 " style="font-size: 18px;">{{ item3.titulo }}</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  

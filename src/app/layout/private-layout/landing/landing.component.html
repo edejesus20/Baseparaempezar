@@ -1,0 +1,46 @@
+
+    <div class="margen grid">
+
+        <ng-template [ngIf]="bandera">
+            <div class="col-12 sm:col-12 md:col-8 lg:col-8 xl:col-8 ">
+               
+                <div class="imgLogo">
+                    <img alt="logo" src="assets/construccion.jpg" 
+                    width="98%"
+                     styleClass="p-button-outlined"class=""/>
+                </div>
+                
+            </div>
+
+        <div class=" col-12 sm:col-12 md:col-4 lg:col-4 xl:col-4">
+            <div >
+                
+                <div class="titleCard"  >
+                    Bienvenido
+                </div>
+
+                <div class="titleCard" >
+             
+                    <p-avatar image="{{image3}}"  pRipple 
+              [style]="{'width':'270px','height':'280px','border':'2px solid #f16357'}"
+              styleClass="imgLogo4 p-button-rounded p-button-outlined" 
+              size="xlarge" shape="circle"></p-avatar>
+              
+              <!-- <div circle class="mt-10" style="margin-left: -50px; margin-top: 200px;"> 
+                <button pButton pRipple type="button" icon="pi pi-camera" 
+                title="Adjuntar imagen"
+                class="p-button-rounded p-button-secondary" 
+                style="font-size: 2rem;border:2px solid #f16357"></button>
+            </div> -->
+                  <!-- <img class="imgLogo2" width="60%" src="{{image3}}" alt=""  styleClass="p-button-outlined"> -->
+                </div>
+              
+            </div>
+ 
+        </div>
+    </ng-template>
+
+</div>
+<p-toast></p-toast>
+
+<p-confirmPopup></p-confirmPopup>
