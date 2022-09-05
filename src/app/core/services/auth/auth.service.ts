@@ -6,7 +6,7 @@ import { catchError, retry, tap } from 'rxjs/operators';
 import { BehaviorSubject } from 'rxjs';
 import { UserI, UserLoginI, UserLoginResponseI } from 'src/app/models/authorization/usr_User';
 import { environment } from 'src/environments/environment';
-import { createMenu } from 'src/app/consts/menu';
+import { createMenu, listMenu } from 'src/app/consts/menu';
 import *as moment from 'moment';
 import { Router } from '@angular/router';
 
@@ -130,7 +130,9 @@ export class AuthService {
     let fecha =  moment();
     localStorage.setItem(KEY_FECHA, JSON.stringify(fecha));
     localStorage.setItem(KEY_USER, JSON.stringify(loginData.user));
-    localStorage.setItem(KEY_MENU, JSON.stringify(loginData.menu));
+    localStorage.setItem(KEY_MENU, JSON.stringify(listMenu));
+    // simulando la peiicion del backend
+    // localStorage.setItem(KEY_MENU, JSON.stringify(listMenu));
     
   }
 

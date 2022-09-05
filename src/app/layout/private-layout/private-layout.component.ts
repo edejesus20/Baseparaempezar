@@ -192,8 +192,10 @@ if(token!=null && user!=null && menu != null){
   let userObjeto:any = JSON.parse(user); 
   let menuObjeto:any = JSON.parse(menu);
 // console.log(menuObjeto)
-  this.privateMenu=createMenu(menuObjeto.mainSesion) as any;
+  this.privateMenu=createMenu(menuObjeto) as any;
   this.menu1 = this.privateMenu;
+// console.log(this.privateMenu,'this.privateMenu;')
+
   // this.menu1 = listMenu
   this.UserId=userObjeto.id
 
