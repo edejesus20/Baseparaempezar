@@ -6,11 +6,11 @@ import { DashboardComponent } from './dashboard.component';
 const routes: Routes = [
   {
     path: '',
-    component: GeneralComponent,
+    component: DashboardComponent,
     children:[
         //universidad
         {
-          path: 'general',
+          path: 'aspecto_general',
           component: GeneralComponent,
         },
         ]

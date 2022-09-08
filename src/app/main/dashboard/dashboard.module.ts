@@ -39,11 +39,13 @@ import { GeneralComponent } from './components/escritorio/general/general.compon
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {MultiSelectModule} from 'primeng/multiselect';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NuevoComponent } from './components/nuevo/nuevo.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    GeneralComponent
+    GeneralComponent,
+    NuevoComponent
   ],
   imports: [
     CommonModule,
